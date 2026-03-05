@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechHome Audio — New Way to Play</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <nav class="nav-container">
+      <a href="#" class="logo">
+        <svg class="logo-mark" viewBox="0 0 28 28" fill="none">
+          <rect x="2"  y="2"  width="10" height="10" rx="2.5" fill="var(--red)"/>
+          <rect x="16" y="2"  width="10" height="10" rx="2.5" fill="var(--red)" opacity=".55"/>
+          <rect x="2"  y="16" width="10" height="10" rx="2.5" fill="var(--red)" opacity=".55"/>
+          <rect x="16" y="16" width="10" height="10" rx="2.5" fill="var(--red)" opacity=".3"/>
+        </svg>
+        <span class="logo-text">TechHome<strong> Audio</strong></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"     class="nav-link">Trang Chủ</a></li>
+        <li><a href="#products" class="nav-link">Sản Phẩm</a></li>
+        <li><a href="#brands"   class="nav-link">Thương Hiệu</a></li>
+        <li><a href="#about"    class="nav-link">Về Chúng Tôi</a></li>
+        <li><a href="#contact"  class="nav-link">Liên Hệ</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <!-- Theme Switcher -->
+        <div class="theme-switcher" id="themeSwitcher" data-active="auto">
+          <button class="theme-btn" data-mode="light" aria-label="Sáng">
+            <svg viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.22 4.22l1.42 1.42M14.36 14.36l1.42 1.42M4.22 15.78l1.42-1.42M14.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <button class="theme-btn" data-mode="dark" aria-label="Tối">
+            <svg viewBox="0 0 20 20" fill="none">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <button class="theme-btn" data-mode="auto" aria-label="Tự động">
+            <svg viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 2.5v15" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 2.5A7.5 7.5 0 0117.5 10H10V2.5z" fill="currentColor" opacity=".3"/>
+            </svg>
+          </button>
+          <div class="theme-indicator"></div>
+        </div>
+        <a href="#products" class="btn-shop">Mua Ngay</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SLIDER ===== -->
+  <section class="hero-slider" id="home">
+
+    <!-- Slide 1 — TechHome Brand -->
+    <div class="hs-slide hs-active" data-index="0"
+         style="--s-from:#0a0010;--s-to:#1c0028;--s-glow:rgba(237,29,79,.28)">
+      <div class="hs-visual">
+        <div class="hs-art">
+          <div class="ba-rings">
+            <div class="ba-ring ba-r1"></div>
+            <div class="ba-ring ba-r2"></div>
+            <div class="ba-ring ba-r3"></div>
+          </div>
+          <div class="ba-core">
+            <svg viewBox="0 0 80 80" fill="none">
+              <rect x="4"  y="4"  width="32" height="32" rx="7" fill="var(--red)"/>
+              <rect x="44" y="4"  width="32" height="32" rx="7" fill="var(--red)" opacity=".5"/>
+              <rect x="4"  y="44" width="32" height="32" rx="7" fill="var(--red)" opacity=".5"/>
+              <rect x="44" y="44" width="32" height="32" rx="7" fill="var(--red)" opacity=".25"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="hs-content">
+        <div class="hs-badge"><span class="hs-dot-pulse"></span>Nhà Phân Phối Chính Thức</div>
+        <h1 class="hs-title">Cách Mới<br><em>Để Nghe</em></h1>
+        <p class="hs-sub">Trải nghiệm âm thanh chưa từng có. Tuyển chọn từ những thương hiệu danh tiếng nhất thế giới.</p>
+        <div class="hs-cta">
+          <a href="#products" class="btn-primary">Khám Phá Ngay</a>
+          <a href="#brands" class="btn-ghost">Xem Thương Hiệu ↓</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 — Marshall -->
+    <div class="hs-slide" data-index="1"
+         style="--s-from:#1a1000;--s-to:#2e1e00;--s-glow:rgba(200,168,75,.25);--s-accent:#c8a84b">
+      <div class="hs-visual">
+        <div class="hs-art">
+          <div class="mh-art">
+            <div class="mh-body">
+              <div class="mh-label">MARSHALL</div>
+              <div class="mh-grille"></div>
+              <div class="mh-knobs"><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="mh-shadow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hs-content">
+        <div class="hs-badge" style="border-color:rgba(200,168,75,.45)">
+          <span class="hs-dot-pulse" style="background:#c8a84b;box-shadow:0 0 8px #c8a84b"></span>
+          Marshall · London 1962
+        </div>
+        <h1 class="hs-title">Rock &amp;<br><em style="color:#c8a84b">Roll Legend</em></h1>
+        <p class="hs-sub">Stanmore III — bass trầm hùng, treble trong veo. Thùng loa thủ công tồn tại qua nhiều thế hệ.</p>
+        <div class="hs-cta">
+          <a href="#products" class="btn-primary" style="background:#c8a84b;color:#1a1000">Khám Phá Marshall</a>
+          <a href="#products" class="btn-ghost">Xem Tất Cả</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 — Devialet -->
+    <div class="hs-slide" data-index="2"
+         style="--s-from:#060a18;--s-to:#0e1a30;--s-glow:rgba(91,127,255,.28);--s-accent:#5b7fff">
+      <div class="hs-visual">
+        <div class="hs-art">
+          <div class="dh-art">
+            <div class="dh-glow"></div>
+            <div class="dh-sphere"></div>
+            <div class="dh-wings"><span></span><span></span></div>
+            <div class="dh-reflection"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hs-content">
+        <div class="hs-badge" style="border-color:rgba(91,127,255,.45)">
+          <span class="hs-dot-pulse" style="background:#5b7fff;box-shadow:0 0 8px #5b7fff"></span>
+          Devialet · Paris 2007
+        </div>
+        <h1 class="hs-title">Vật Lý<br><em style="color:#5b7fff">Bị Phá Vỡ</em></h1>
+        <p class="hs-sub">Phantom I — 108 dB SPL. Bass xuống đến 16 Hz. Hình dạng siêu nhỏ gọn, âm thanh không tưởng.</p>
+        <div class="hs-cta">
+          <a href="#products" class="btn-primary" style="background:#5b7fff">Khám Phá Devialet</a>
+          <a href="#products" class="btn-ghost">Xem Tất Cả</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4 — Bang & Olufsen -->
+    <div class="hs-slide" data-index="3"
+         style="--s-from:#080810;--s-to:#14141e;--s-glow:rgba(184,188,200,.16);--s-accent:#b8bcc8">
+      <div class="hs-visual">
+        <div class="hs-art">
+          <div class="bh-art">
+            <div class="bh-col">
+              <div class="bh-body"></div>
+              <div class="bh-base"></div>
+            </div>
+            <div class="bh-shadow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hs-content">
+        <div class="hs-badge" style="border-color:rgba(184,188,200,.35)">
+          <span class="hs-dot-pulse" style="background:#b8bcc8;box-shadow:0 0 8px #b8bcc8"></span>
+          Bang &amp; Olufsen · Đan Mạch 1925
+        </div>
+        <h1 class="hs-title">Bắc Âu<br><em style="color:#b8bcc8">Hoàn Hảo</em></h1>
+        <p class="hs-sub">Beosound Level — nhôm anodized, âm thanh 360°. Nghệ thuật và âm nhạc trong một tác phẩm.</p>
+        <div class="hs-cta">
+          <a href="#products" class="btn-primary" style="background:#b8bcc8;color:#08080f">Khám Phá B&amp;O</a>
+          <a href="#products" class="btn-ghost">Xem Tất Cả</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 5 — Harman Kardon -->
+    <div class="hs-slide" data-index="4"
+         style="--s-from:#050818;--s-to:#0a1230;--s-glow:rgba(102,128,255,.3);--s-accent:#6680ff">
+      <div class="hs-visual">
+        <div class="hs-art">
+          <div class="hh-art">
+            <div class="hh-glow-outer"></div>
+            <div class="hh-dome"></div>
+            <div class="hh-stem"></div>
+            <div class="hh-base"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hs-content">
+        <div class="hs-badge" style="border-color:rgba(102,128,255,.45)">
+          <span class="hs-dot-pulse" style="background:#6680ff;box-shadow:0 0 8px #6680ff"></span>
+          Harman Kardon · Mỹ 1953
+        </div>
+        <h1 class="hs-title">Điêu Khắc<br><em style="color:#6680ff">Ánh Sáng</em></h1>
+        <p class="hs-sub">Aura Studio 4 — vòm trong suốt huyền ảo, LED Ambient 360°. Âm nhạc và nghệ thuật hợp nhất.</p>
+        <div class="hs-cta">
+          <a href="#products" class="btn-primary" style="background:#6680ff">Khám Phá Harman</a>
+          <a href="#products" class="btn-ghost">Xem Tất Cả</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 6 — Sennheiser -->
+    <div class="hs-slide" data-index="5"
+         style="--s-from:#020d0c;--s-to:#051a16;--s-glow:rgba(0,196,160,.25);--s-accent:#00c4a0">
+      <div class="hs-visual">
+        <div class="hs-art">
+          <div class="sh-art">
+            <div class="sh-arc"></div>
+            <div class="sh-band"></div>
+            <div class="sh-cups"><span></span><span></span></div>
+            <div class="sh-cable"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hs-content">
+        <div class="hs-badge" style="border-color:rgba(0,196,160,.45)">
+          <span class="hs-dot-pulse" style="background:#00c4a0;box-shadow:0 0 8px #00c4a0"></span>
+          Sennheiser · Đức 1945
+        </div>
+        <h1 class="hs-title">Kỹ Thuật<br><em style="color:#00c4a0">Đức 75 Năm</em></h1>
+        <p class="hs-sub">MOMENTUM 4 — 60 giờ pin, chống ồn thích ứng, aptX Adaptive. Đỉnh cao âm thanh cá nhân.</p>
+        <div class="hs-cta">
+          <a href="#products" class="btn-primary" style="background:#00c4a0;color:#020d0c">Khám Phá Sennheiser</a>
+          <a href="#products" class="btn-ghost">Xem Tất Cả</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave bottom -->
+    <div class="hs-wave" aria-hidden="true">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 C150,100 350,0 600,60 C850,120 1050,20 1200,60 L1200,120 L0,120 Z" fill="var(--hero-wave-fill)"/>
+      </svg>
+    </div>
+
+    <!-- Arrows -->
+    <button class="hs-arrow hs-prev" id="hsPrev" aria-label="Slide trước">
+      <svg viewBox="0 0 24 24" fill="none"><polyline points="15,18 9,12 15,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="hs-arrow hs-next" id="hsNext" aria-label="Slide tiếp">
+      <svg viewBox="0 0 24 24" fill="none"><polyline points="9,18 15,12 9,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <!-- Dots -->
+    <div class="hs-dots" id="hsDots">
+      <button class="hs-dot-btn hs-dot-active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="hs-dot-btn" data-slide="1" aria-label="Slide 2"></button>
+      <button class="hs-dot-btn" data-slide="2" aria-label="Slide 3"></button>
+      <button class="hs-dot-btn" data-slide="3" aria-label="Slide 4"></button>
+      <button class="hs-dot-btn" data-slide="4" aria-label="Slide 5"></button>
+      <button class="hs-dot-btn" data-slide="5" aria-label="Slide 6"></button>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="hs-progress"><div class="hs-progress-fill" id="hsProgressFill"></div></div>
+
+    <!-- Scroll hint -->
+    <div class="hs-scroll-hint">
+      <div class="scroll-pill"><div class="scroll-dot"></div></div>
+    </div>
+
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Marshall</span><span class="m-dot">·</span>
+      <span>Devialet</span><span class="m-dot">·</span>
+      <span>Bang &amp; Olufsen</span><span class="m-dot">·</span>
+      <span>Bose</span><span class="m-dot">·</span>
+      <span>Harman Kardon</span><span class="m-dot">·</span>
+      <span>Sennheiser</span><span class="m-dot">·</span>
+      <span>Marshall</span><span class="m-dot">·</span>
+      <span>Devialet</span><span class="m-dot">·</span>
+      <span>Bang &amp; Olufsen</span><span class="m-dot">·</span>
+      <span>Bose</span><span class="m-dot">·</span>
+      <span>Harman Kardon</span><span class="m-dot">·</span>
+      <span>Sennheiser</span><span class="m-dot">·</span>
+    </div>
+  </div>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <p class="section-eyebrow tc reveal-fade">Tại Sao Chọn Chúng Tôi</p>
+      <div class="features-grid">
+        <div class="feature-card reveal-fade">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="var(--red)" stroke-width="1.5"/><path d="M16 24c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8" stroke="var(--red)" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="3" fill="var(--red)"/></svg>
+          </div>
+          <h3>Âm Thanh Đỉnh Cao</h3>
+          <p>Chất âm chuẩn audiophile được tinh chỉnh hoàn hảo. Từng tần số, từng chi tiết đều được tái hiện sống động nhất.</p>
+        </div>
+        <div class="feature-card reveal-fade delay-1">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 24h4M36 24h4M24 8v4M24 36v4" stroke="var(--red)" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="10" stroke="var(--red)" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Tự Do Không Dây</h3>
+          <p>Kết nối không giới hạn mà không đánh đổi chất lượng. Truyền tải âm thanh trong suốt lên đến 100 mét.</p>
+        </div>
+        <div class="feature-card reveal-fade delay-2">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 10l3.6 7.2 8 1.2-5.8 5.6 1.4 8L24 28l-7.2 4 1.4-8L12.4 18.4l8-1.2L24 10z" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Thiết Kế Sang Trọng</h3>
+          <p>Những tuyệt tác thẩm mỹ. Được chế tác từ vật liệu hàng không vũ trụ — đẹp đến mức bạn không muốn cất đi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header reveal-fade">
+        <p class="section-eyebrow">Bộ Sưu Tập</p>
+        <h2 class="section-title">Âm Thanh Huyền Thoại.<br>Chế Tác Xuất Sắc.</h2>
+      </div>
+    </div>
+
+    <div class="product-row reveal-left">
+      <div class="product-visual">
+        <div class="product-img-wrap">
+          <div class="product-img-bg marshall">
+            <div class="p-art p-marshall">
+              <div class="pm-body"><div class="pm-grille"></div><div class="pm-knobs"><span></span><span></span><span></span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-info">
+        <span class="brand-chip">Marshall</span>
+        <h2 class="product-name">Stanmore III</h2>
+        <p class="product-desc">Sinh ra từ huyền thoại rock and roll. Stanmore III mang đến bass trầm hùng và treble trong veo qua thùng loa thủ công, được chế tác để tồn tại qua nhiều thế hệ.</p>
+        <ul class="spec-list">
+          <li><span>Công suất</span><strong>80W RMS</strong></li>
+          <li><span>Kết nối</span><strong>Bluetooth 5.2</strong></li>
+          <li><span>Hoàn thiện</span><strong>Vinyl Đen</strong></li>
+        </ul>
+        <a href="#" class="btn-outline">Xem Chi Tiết →</a>
+      </div>
+    </div>
+
+    <div class="product-row reverse reveal-right">
+      <div class="product-visual">
+        <div class="product-img-wrap">
+          <div class="product-img-bg devialet">
+            <div class="p-art p-devialet">
+              <div class="pd-sphere"></div><div class="pd-wings"><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-info">
+        <span class="brand-chip">Devialet</span>
+        <h2 class="product-name">Phantom I</h2>
+        <p class="product-desc">Không phải loa — đây là một hiện tượng. Phantom I tạo ra cường độ âm thanh không tưởng từ hình dạng siêu nhỏ gọn, phá vỡ mọi quy luật vật lý.</p>
+        <ul class="spec-list">
+          <li><span>Cường độ</span><strong>108 dB SPL</strong></li>
+          <li><span>Bass</span><strong>Xuống đến 16 Hz</strong></li>
+          <li><span>Chất liệu</span><strong>Hợp kim Hàng không</strong></li>
+        </ul>
+        <a href="#" class="btn-outline">Xem Chi Tiết →</a>
+      </div>
+    </div>
+
+    <div class="product-row reveal-left">
+      <div class="product-visual">
+        <div class="product-img-wrap">
+          <div class="product-img-bg beo">
+            <div class="p-art p-beo">
+              <div class="pb-body"></div><div class="pb-base"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-info">
+        <span class="brand-chip">Bang &amp; Olufsen</span>
+        <h2 class="product-name">Beosound Level</h2>
+        <p class="product-desc">Sự hoàn hảo Bắc Âu được chạm đến. Beosound Level là tác phẩm nghệ thuật lẫn nhạc cụ — chế tác từ nhôm anodized và vật liệu tự nhiên cao cấp.</p>
+        <ul class="spec-list">
+          <li><span>Kênh âm</span><strong>3-way Stereo</strong></li>
+          <li><span>Chất liệu</span><strong>Nhôm anodized</strong></li>
+          <li><span>Phủ sóng</span><strong>360°</strong></li>
+        </ul>
+        <a href="#" class="btn-outline">Xem Chi Tiết →</a>
+      </div>
+    </div>
+
+    <div class="product-row reverse reveal-right">
+      <div class="product-visual">
+        <div class="product-img-wrap">
+          <div class="product-img-bg bose">
+            <div class="p-art p-bose">
+              <div class="pbo-body"><div class="pbo-strip"></div><div class="pbo-dots"><span></span><span></span><span></span><span></span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-info">
+        <span class="brand-chip">Bose</span>
+        <h2 class="product-name">SoundLink Max</h2>
+        <p class="product-desc">Được thiết kế cho mọi cuộc phiêu lưu. Chống nước, chống va đập — SoundLink Max mang âm thanh huyền thoại Bose với bass sâu trong mọi môi trường.</p>
+        <ul class="spec-list">
+          <li><span>Pin</span><strong>20 Giờ</strong></li>
+          <li><span>Chống nước</span><strong>IP67</strong></li>
+          <li><span>Công nghệ</span><strong>PositionIQ™</strong></li>
+        </ul>
+        <a href="#" class="btn-outline">Xem Chi Tiết →</a>
+      </div>
+    </div>
+
+    <div class="product-row reveal-left">
+      <div class="product-visual">
+        <div class="product-img-wrap">
+          <div class="product-img-bg harman">
+            <div class="p-art p-harman">
+              <div class="ph-dome"></div><div class="ph-stem"></div><div class="ph-base"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-info">
+        <span class="brand-chip">Harman Kardon</span>
+        <h2 class="product-name">Aura Studio 4</h2>
+        <p class="product-desc">Tác phẩm điêu khắc phát sáng bằng âm thanh. Aura Studio 4 phủ đầy không gian với âm thanh 360° đắm chìm, bao bọc trong vòm trong suốt huyền ảo.</p>
+        <ul class="spec-list">
+          <li><span>Thiết kế</span><strong>360° Toàn hướng</strong></li>
+          <li><span>Đèn</span><strong>Vòng LED Ambient</strong></li>
+          <li><span>Công suất</span><strong>100W tổng</strong></li>
+        </ul>
+        <a href="#" class="btn-outline">Xem Chi Tiết →</a>
+      </div>
+    </div>
+
+    <div class="product-row reverse reveal-right">
+      <div class="product-visual">
+        <div class="product-img-wrap">
+          <div class="product-img-bg sennheiser">
+            <div class="p-art p-sennheiser">
+              <div class="ps-arc"></div><div class="ps-cups"><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-info">
+        <span class="brand-chip">Sennheiser</span>
+        <h2 class="product-name">MOMENTUM 4</h2>
+        <p class="product-desc">Đỉnh cao của âm thanh cá nhân. MOMENTUM 4 kết hợp chống ồn thích ứng với độ chính xác âm học, tinh luyện qua 75 năm kỹ thuật Đức.</p>
+        <ul class="spec-list">
+          <li><span>Chống ồn</span><strong>Thích ứng thông minh</strong></li>
+          <li><span>Pin</span><strong>60 Giờ</strong></li>
+          <li><span>Codec</span><strong>aptX Adaptive</strong></li>
+        </ul>
+        <a href="#" class="btn-outline">Xem Chi Tiết →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BRANDS ===== -->
+  <section class="brands" id="brands">
+    <div class="container">
+      <div class="section-header reveal-fade">
+        <p class="section-eyebrow">Đối Tác Của Chúng Tôi</p>
+        <h2 class="section-title">Những Thương Hiệu<br>Âm Thanh Danh Tiếng Nhất</h2>
+      </div>
+      <div class="brands-grid">
+        <div class="brand-card reveal-fade" style="--d:.00s"><div class="bm">M</div><p class="bn">Marshall</p><p class="bo">London, Anh · 1962</p></div>
+        <div class="brand-card reveal-fade" style="--d:.07s"><div class="bm">D</div><p class="bn">Devialet</p><p class="bo">Paris, Pháp · 2007</p></div>
+        <div class="brand-card reveal-fade" style="--d:.14s"><div class="bm" style="font-size:.82rem">B&amp;O</div><p class="bn">Bang &amp; Olufsen</p><p class="bo">Đan Mạch · 1925</p></div>
+        <div class="brand-card reveal-fade" style="--d:.21s"><div class="bm">B</div><p class="bn">Bose</p><p class="bo">Mỹ · 1964</p></div>
+        <div class="brand-card reveal-fade" style="--d:.28s"><div class="bm" style="font-size:.82rem">HK</div><p class="bn">Harman Kardon</p><p class="bo">Mỹ · 1953</p></div>
+        <div class="brand-card reveal-fade" style="--d:.35s"><div class="bm">S</div><p class="bn">Sennheiser</p><p class="bo">Đức · 1945</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="about-bg" id="aboutBg"></div>
+    <div class="about-overlay"></div>
+    <div class="container">
+      <div class="about-inner reveal-fade">
+        <p class="section-eyebrow light-eye">Câu Chuyện Của Chúng Tôi</p>
+        <h2 class="about-title">Đam Mê với<br><em>Âm Thanh Hoàn Hảo</em></h2>
+        <p class="about-body">TechHome Audio ra đời từ một niềm tin duy nhất: mọi người đều xứng đáng được nghe âm nhạc đúng cách nó được tạo ra. Chúng tôi hợp tác độc quyền với những thương hiệu âm thanh huyền thoại để mang kiệt tác đến tận tay bạn.</p>
+        <p class="about-body">Mỗi sản phẩm đều được tuyển chọn bởi những người yêu âm nhạc, dành cho những người yêu âm nhạc. Chúng tôi không bán loa. Chúng tôi kiến tạo trải nghiệm.</p>
+        <div class="stats-row">
+          <div class="stat"><span class="stat-n">6</span><span class="stat-l">Thương Hiệu Đỉnh</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-n">200+</span><span class="stat-l">Sản Phẩm</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-n">10000+</span><span class="stat-l">Khách Hàng Hài Lòng</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal-fade">
+        <p class="section-eyebrow">Liên Hệ</p>
+        <h2 class="section-title">Chúng Tôi Luôn<br>Sẵn Sàng Lắng Nghe</h2>
+      </div>
+      <div class="contact-grid">
+        <a href="tel:+84123456789" class="contact-card reveal-fade" style="--d:.00s">
+          <div class="cc-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C9.61 21 3 14.39 3 6.25c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.01l-2.2 2.2z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <p class="cc-label">Điện Thoại</p><p class="cc-val">+84 123 456 789</p>
+        </a>
+        <a href="https://zalo.me" target="_blank" class="contact-card reveal-fade" style="--d:.08s">
+          <div class="cc-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M7 16l3-8 3 5.5L16 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <p class="cc-label">Zalo</p><p class="cc-val">TechHome Audio</p>
+        </a>
+        <a href="https://facebook.com" target="_blank" class="contact-card reveal-fade" style="--d:.16s">
+          <div class="cc-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <p class="cc-label">Facebook</p><p class="cc-val">TechHome Audio</p>
+        </a>
+        <a href="mailto:hello@techhomeaudio.vn" class="contact-card reveal-fade" style="--d:.24s">
+          <div class="cc-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.6"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <p class="cc-label">Email</p><p class="cc-val">hello@techhomeaudio.vn</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <svg class="logo-mark" viewBox="0 0 28 28" fill="none">
+              <rect x="2" y="2" width="10" height="10" rx="2.5" fill="var(--red)"/>
+              <rect x="16" y="2" width="10" height="10" rx="2.5" fill="var(--red)" opacity=".55"/>
+              <rect x="2" y="16" width="10" height="10" rx="2.5" fill="var(--red)" opacity=".55"/>
+              <rect x="16" y="16" width="10" height="10" rx="2.5" fill="var(--red)" opacity=".3"/>
+            </svg>
+            <span class="logo-text">TechHome<strong> Audio</strong></span>
+          </a>
+          <p class="f-slogan">New way to play</p>
+          <p class="f-desc">Nhà phân phối chính thức tại Việt Nam các thương hiệu âm thanh cao cấp hàng đầu thế giới.</p>
+        </div>
+        <div class="f-col"><p class="f-col-title">Sản Phẩm</p><a href="#">Marshall</a><a href="#">Devialet</a><a href="#">Bang &amp; Olufsen</a><a href="#">Bose</a><a href="#">Harman Kardon</a><a href="#">Sennheiser</a></div>
+        <div class="f-col"><p class="f-col-title">Công Ty</p><a href="#about">Về Chúng Tôi</a><a href="#brands">Thương Hiệu</a><a href="#contact">Liên Hệ</a><a href="#">Bảo Hành</a></div>
+        <div class="f-col"><p class="f-col-title">Theo Dõi</p><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">Zalo</a></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 TechHome Audio. Tất cả quyền được bảo lưu.</p>
+        <p>Được tạo ra với niềm đam mê dành cho âm thanh hoàn hảo.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING CONTACT ===== -->
+  <div class="float-wrap" id="floatWrap">
+    <button class="float-main" id="floatMain" aria-label="Liên hệ">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="float-items" id="floatItems">
+      <a href="tel:+84123456789" class="fi fi-phone"><svg viewBox="0 0 24 24" fill="none"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C9.61 21 3 14.39 3 6.25c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.01l-2.2 2.2z" stroke="currentColor" stroke-width="1.6"/></svg><span>Gọi ngay</span></a>
+      <a href="https://zalo.me" target="_blank" class="fi fi-zalo"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M7 16l3-8 3 5.5L16 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Zalo</span></a>
+      <a href="https://facebook.com" target="_blank" class="fi fi-fb"><svg viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Facebook</span></a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
